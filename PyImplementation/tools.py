@@ -108,3 +108,8 @@ def resample(img, Mnew, Nnew):
 def psnr(img1, img2): 
     return cv2.PSNR(img1, img2)
 
+def getoptions(param, key, value):
+    if key in param:
+        return param[key]
+    else:
+        return value
